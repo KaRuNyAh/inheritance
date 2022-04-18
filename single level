@@ -1,0 +1,24 @@
+public class Main{
+    public static void main(String args[]){
+        Add obj1=new Add(); //entha line ileana coming but enku oru doubt ethu na call pana kudatha .....
+        AddSum obj=new AddSum();
+        obj.sum();
+        obj.a=4;
+        obj.b=5;
+        System.out.println(obj.sum());
+        System.out.println(obj.sub());
+    }
+}
+class Add{
+      int a,b,c=0;
+    public int sum(){
+        c=a+b;
+      return c;
+    }
+}
+class AddSum extends Add{
+    public int sub(){
+        c=a-b;
+        return c;
+    }
+}
