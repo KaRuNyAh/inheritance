@@ -1,0 +1,33 @@
+
+public class Main{
+    public static void main(String args[]){
+       
+        Multi obj3=new Multi();
+        obj3.a=4;
+        obj3.b=5;
+        
+        System.out.println(obj3.sum());
+        System.out.println(obj3.sub());
+        System.out.println(obj3.mul());
+    }
+}
+class Add{
+      int a,b,c;
+    public int sum(){
+        c=a+b;
+      return c;
+    }
+}
+class AddSum extends Add{
+    public int sub(){
+        c=a-b;
+        return c;
+    }
+}
+class Multi extends AddSum{
+    
+    public int mul(){
+        c=a*b;
+        return c;
+    }
+}
